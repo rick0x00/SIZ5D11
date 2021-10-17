@@ -19,7 +19,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/silvajhb/SIZ5D11/master/scri
 ## 1. Install Zabbix repository
 ```shell
 wget https://repo.zabbix.com/zabbix/5.0/debian/pool/main/z/zabbix-release/zabbix-release_5.0-2+debian11_all.deb;
-dpkg -i zabbix-release_5.0-2+debian11_all.deb;
+apt install ./zabbix-release_5.0-2+debian11_all.deb;
 apt update;
 ```
 
