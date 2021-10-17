@@ -37,7 +37,7 @@ mysql_secure_installation;
 ## 4. Create initial database
 ```shell
 mysql -u root -p;
-# insert password;
+# insert password or press enter;
 ```
 Run the following on your database host.
 ```mysql
@@ -68,6 +68,21 @@ vi /etc/zabbix/apache.conf;
 ```
 ```
 php_value date.timezone America/Maceio
+```
+
+## 7. Config Selinux
+
+edit the file and replace the line.
+```shell
+vi /etc/selinux/config
+```
+find
+```
+SELINUX=enforcing
+```
+replase with
+```
+SELINUX=disabled
 ```
 ## 7. Firewall configuration
 Open ports 80 and 443, allow traffic Zabbix web GUI and Apache server.
