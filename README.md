@@ -84,7 +84,7 @@ replase with
 ```
 SELINUX=disabled
 ```
-## 7. Firewall configuration
+## 8. Firewall configuration
 Open ports 80 and 443, allow traffic Zabbix web GUI and Apache server.
 
 UFW Firewall
@@ -105,7 +105,7 @@ iptables -A INPUT -p tcp --dport 80 -j ACCEPT;
 iptables -A INPUT -p tcp --dport 443 -j ACCEPT;
 ```
 
-## 8. Start Zabbix server and agent processes
+## 9. Start Zabbix server and agent processes
 ```shell
 systemctl restart zabbix-server zabbix-agent apache2 mariadb;
 systemctl enable zabbix-server zabbix-agent apache2 mariadb;
@@ -113,7 +113,7 @@ systemctl start zabbix-server zabbix-agent apache2 mariadb;
 systemctl status zabbix-server zabbix-agent apache2 mariadb;
 ```
 
-## 9. Configure Zabbix frontend
+## 10. Configure Zabbix frontend
 Connect to your newly installed Zabbix frontend: http://server_ip_or_name/zabbix
 Follow steps described in Zabbix documentation: [Installing frontend](https://www.zabbix.com/documentation/5.0/manual/installation/install#installing_frontend)
 
