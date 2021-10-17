@@ -70,28 +70,20 @@ vi /etc/zabbix/apache.conf;
 php_value date.timezone America/Maceio
 ```
 
-## 7. Config Selinux
+## 7. Install ROOT and UFW
 
-edit the file and replace the line.
 ```shell
-vi /etc/selinux/config
+apt install root ufw -y;
 ```
-find
-```
-SELINUX=enforcing
-```
-replase with
-```
-SELINUX=disabled
-```
+
 ## 8. Firewall configuration
 Open ports 80 and 443, allow traffic Zabbix web GUI and Apache server.
 
 UFW Firewall
 ```shell
-ufw allow 80/tcp;
-ufw allow 443/tcp;
-ufw reload;
+sudo ufw allow 80/tcp;
+sudo ufw allow 443/tcp;
+sudo ufw reload;
 ```
 
 IpTables Firewall
