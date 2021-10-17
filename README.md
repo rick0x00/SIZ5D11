@@ -40,7 +40,7 @@ mysql -u root -p;
 # insert password or press enter;
 ```
 Run the following on your database host.
-```mysql
+```sql
 mysql> create database zabbix character set utf8 collate utf8_bin;
 mysql> create user zabbix@localhost identified by 'password';
 mysql> show databases;
