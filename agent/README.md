@@ -13,7 +13,7 @@ WEB SERVER: Apache
 ## Fast Install
 Execute command
 ```shell
-sh -c "$(wget -O- https://raw.githubusercontent.com/silvajhb/SIZ5D11/master/script.sh)";
+sh -c "$(wget -O- https://raw.githubusercontent.com/silvajhb/SIZ5D11/agent/master/script.sh)";
 ```
 
 ## 1. Install Zabbix repository
@@ -23,7 +23,7 @@ apt install ./zabbix-release_5.0-2+debian11_all.deb;
 apt update;
 ```
 
-## 2. Install Zabbix server, frontend, agent
+## 2. Install Zabbix agent
 ```shell
 apt install zabbix-agent -y;
 ```
@@ -45,7 +45,7 @@ Hostanme="Local-Hostname"
 apt install sudo ufw -y;
 ```
 
-## 8. Firewall configuration
+## 5. Firewall configuration
 Open ports 10050, allow traffic Zabbix Agent.
 
 UFW Firewall
@@ -54,7 +54,7 @@ sudo ufw allow 10050/tcp;
 sudo ufw reload;
 ```
 
-## 9. Start Zabbix server and agent processes
+## 6. Start Zabbix server and agent processes
 ```shell
 systemctl restart zabbix-agent;
 systemctl enable  zabbix-agent;
