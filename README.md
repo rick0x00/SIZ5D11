@@ -10,7 +10,7 @@ DATABASE: MySQL
 
 WEB SERVER: Apache
 
-###Read Also
+### Read Also
 [Quickstart guide](https://www.zabbix.com/documentation/5.0/manual/quickstart/login).
 
 [Video Zabbix server installation explained](https://www.youtube.com/embed/yYmkFf3AEBo?autoplay=1).
