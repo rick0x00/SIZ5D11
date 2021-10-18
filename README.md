@@ -73,7 +73,7 @@ php_value date.timezone America/Maceio
 ## 7. Install ROOT and UFW
 
 ```shell
-apt install root ufw -y;
+apt install sudo ufw -y;
 ```
 
 ## 8. Firewall configuration
