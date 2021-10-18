@@ -34,7 +34,8 @@ open file and edit line
 vi /etc/zabbix/zabbix_agentd.conf
 ```
 ```
-Server="server-ip"
+Server="Server-IP"
+ServerActive="Server-IP"
 Hostanme="Local-Hostname"
 ```
 
